@@ -1,0 +1,28 @@
+.custom-btn {
+    background-color: rgba(201, 155, 81, 0.7);
+    color: white;
+    border: none;
+    
+    padding: 8px 20px;
+    transition: 0.3s;
+}
+
+.custom-btn:hover {
+    background-color: rgba(201, 155, 81, 0.9);
+    color: white;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    
+}
+
+.table-header-custom th {
+    background-color: rgba(201, 155, 81, 0.7) !important;
+    color: white !important;
+}
+.table-header-custom th {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}

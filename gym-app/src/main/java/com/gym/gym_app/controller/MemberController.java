@@ -57,5 +57,11 @@ public class MemberController {
         memberService.deleteMember(id);
     return "redirect:/members";
     }
+    
+    // Home 
+    @GetMapping("/")
+    public String home() {
+        return "home";
+    }
 
 }

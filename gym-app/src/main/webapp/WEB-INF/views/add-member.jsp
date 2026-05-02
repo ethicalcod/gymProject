@@ -3,9 +3,11 @@
 <head>
     <title>Add Member</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body style="background: linear-gradient(to right, #3c786d, #c98423);">
+<%@ include file="header.jsp" %>
 
 <div class="container mt-5">
     <div class="card shadow p-4">
@@ -32,7 +34,7 @@
                 </select>
             </div>
 
-            <button class="btn btn-success w-100">Save Member</button>
+            <button class="btn custom-btn w-100">Save Member</button>
         </form>
     </div>
 </div>
