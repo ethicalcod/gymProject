@@ -44,6 +44,8 @@ public class Member {
         this.membershipType = membershipType;
     }
 
-    @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "member", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<WorkoutPlan> workoutPlans;
+
+    
 }
