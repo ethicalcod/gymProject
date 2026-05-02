@@ -11,9 +11,9 @@
 
 <div class="container mt-5">
     <div class="card shadow p-4">
-        <h2 class="text-center mb-4">Add Member</h2>
+        <h2 class="text-center mb-4">Add/Edit Member</h2>
 
-        <form action="saveMember" method="post">
+        <form action="/saveMember" method="post">
             <input type="hidden" name="id" value="${member.id}" />
 
             <div class="mb-3">

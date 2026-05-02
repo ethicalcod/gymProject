@@ -14,7 +14,7 @@
     <div class="card shadow p-4">
         <h2 class="text-center mb-4">Add Workout Plan</h2>
 
-        <form action="savePlan" method="post">
+        <form action="/savePlan" method="post">
 
             <div class="mb-3">
                 <label>Exercise</label>
