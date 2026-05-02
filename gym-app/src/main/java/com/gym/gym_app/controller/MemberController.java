@@ -3,11 +3,13 @@ package com.gym.gym_app.controller;
 import com.gym.gym_app.entity.Member;
 import com.gym.gym_app.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import org.springframework.dao.DataIntegrityViolationException;
 
 @Controller
 public class MemberController {
@@ -24,9 +26,17 @@ public class MemberController {
 
     // Save member
     @PostMapping("/saveMember")
-    public String saveMember(@ModelAttribute Member member) {
-        memberService.saveMember(member);
-        return "redirect:/members";
+    public String saveMember(@ModelAttribute Member member, Model model) {
+    try {
+            memberService.saveMember(member);
+            return "redirect:/members";
+        } catch (DataIntegrityViolationException e) {
+            model.addAttribute("error", "Duplicate or invalid data!");
+            return "add-member";
+        } catch (Exception e) {
+            model.addAttribute("error", "Something went wrong!");
+            return "add-member";
+    }
     }
 
     // Show all members

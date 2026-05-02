@@ -13,6 +13,12 @@
     <div class="card shadow p-4">
         <h2 class="text-center mb-4">Add/Edit Member</h2>
 
+        <c:if test="${not empty error}">
+            <div class="alert alert-danger text-center">
+                 ${error}
+            </div>
+        </c:if>
+
         <form action="/saveMember" method="post">
             <input type="hidden" name="id" value="${member.id}" />
 
