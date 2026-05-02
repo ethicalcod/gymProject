@@ -32,4 +32,8 @@ public class WorkoutPlanService {
     public WorkoutPlan updateWorkoutPlan(WorkoutPlan plan) {
         return workoutPlanRepository.save(plan);
     }
+
+    public void deletePlan(Long id) {
+    workoutPlanRepository.deleteById(id);
+    }
 }

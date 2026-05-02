@@ -13,6 +13,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
+import org.junit.jupiter.api.BeforeEach;
 
 class MemberServiceTest {
 
@@ -22,10 +23,10 @@ class MemberServiceTest {
     @InjectMocks
     private MemberService memberService;
 
-    public MemberServiceTest() {
+    @BeforeEach
+    void setUp() {
         MockitoAnnotations.openMocks(this);
     }
-
     @Test
     void testGetAllMembers() {
         Member m1 = new Member();
