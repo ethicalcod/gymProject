@@ -121,31 +121,31 @@ http://localhost:8080
 
 ## Members List
 
-![Members](screenshots/members.png)
+![Members](gym-app/screenshots/members.png)
 
 ---
 
 ## Add Member
 
-![Add Member](screenshots/add-member.png)
+![Add Member](gym-app/screenshots/add-member.png)
 
 ---
 
 ## Workout Plans
 
-![Workout Plans](screenshots/workout-plans.png)
+![Workout Plans](gym-app/screenshots/workout-plans.png)
 
 ---
 
 ## Add Workout Plan
 
-![Add Workout Plan](screenshots/add-workout-plan.png)
+![Add Workout Plan](gym-app/screenshots/add-workout-plan.png)
 
 ---
 
 ## Delete Confirmation
 
-![Delete Confirmation](screenshots/delete-confirmation.png)
+![Delete Confirmation](gym-app/screenshots/delete-confirmation.png)
 
 ---
 
