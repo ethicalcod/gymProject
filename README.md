@@ -115,7 +115,7 @@ http://localhost:8080
 
 ## Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](gym-app/screenshots/dashboard.png)
 
 ---
 
